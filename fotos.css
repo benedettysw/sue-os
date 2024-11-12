@@ -1,0 +1,40 @@
+.fotodead{
+    text-align: center;
+}
+
+.foto2{
+    display: none;
+}
+
+
+.foto1:hover{
+    display: none;
+}
+
+
+.foto1:hover + .foto2{
+    display: inline;
+    box-shadow: 0 0 10px red;
+}
+
+
+
+.fotodead > img {
+    height: 400px;
+    margin: 1rem auto;
+    box-shadow: 0 0 30px white;
+    border-radius: 20px;
+
+}
+
+.masAlla , .mujerSaliendo{
+    padding: 1rem 1rem 1rem 1px;
+    
+}
+
+
+#color{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: background 0.5s ease , color ease;
+}

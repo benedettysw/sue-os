@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-size: clamp(.5rem, 2vw + .5rem, 1rem);
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+header{
+    display: flex;
+    background-color: rgb(122, 123, 227);
+    height: 50px;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: row-reverse;
+    padding-right: 1rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+
+ul{
+    display: flex;
+    gap: 1rem;
+    padding: 0 2rem;
+
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+     padding-bottom: 3px; /* Linea del after */
+}
+
+a::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+a:hover::after{
+    transform: scaleX(1);
+}
+
+
+.contenido{
+    margin-top: 3rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    line-height: 30px;
+
+}
+
+article{
+    padding: 2rem;
+    flex: 1 0 400px;
+}
+
+
+
+section{
+    padding: 2rem;
+    flex: 1 0 70%;
+}
+
+
+
+main{
+    padding:2rem;
+    line-height: 35px;
+}
+
+main > em {
+    text-decoration: underline;
+}
+
+footer{
+    padding: 10px;
+    background-color: rgb(122, 123, 227);
+}
+
+
+
+
+button{
+    position: fixed;
+    right: 5px;
+    bottom: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+    
+}
+
