@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-size: clamp(.5rem, 2vw + .5rem, 1rem);
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+
+
+header{
+    padding: 1rem;
+    background-color: rgb(122, 123, 227);
+    
+}
+
+
+.contenido{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    line-height: 30px;
+
+}
+
+article{
+    padding: 2rem;
+    flex: 1 0 30px;
+}
+
+
+
+
+section{
+    padding: 2rem;
+    flex: 1 0 70%;
+}
+
+
+main{
+    padding-top: 1rem;
+}
+
+main > em {
+    text-decoration: underline;
+    padding-bottom: 1rem;
+} 
+
+.titulo{
+    color: rgb(122, 123, 227);
+}
+
+footer{
+    padding: 1rem;
+    background-color: rgb(122, 123, 227);
+    text-align: center;
+}
+ 
+
+
+
+button{
+    position: fixed;
+    right: 5px;
+    bottom: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+    
+}
+ 

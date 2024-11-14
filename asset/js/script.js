@@ -13,7 +13,7 @@ function Modo(){
 
         body.style.color = 'white'
 
-        icono.src = 'img/day.png'
+        icono.src = 'asset/img/day.png'
         
         
         
@@ -24,7 +24,7 @@ function Modo(){
         
         body.style.color = 'black'
         
-        icono.src = 'img/moon.png'
+        icono.src = 'asset/img/moon.png'
 
     }
 
